@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: rgb(235, 239, 240);
+}
+
+button{
+    width: 100px;
+    height: 100px;   
+}
+.deucerto{
+  margin-top: 2%;
+  text-align: center;
+  font-size: 60px;
+  display: none;
+}
+.legal{
+  padding-top: 440px;
+  text-align: center;
+  font-size: 60px;
+  display: none;
+}
+.quadrado{
+    position: absolute;
+    display: flex;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(106, 31, 31);
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    left: 38%;
+    top: 28%;
+}
+.a{
+    position: absolute;
+    width: 350px;
+    height:auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color:rgb(106, 31, 31);
+    justify-content: space-evenly;
+    border: 0;
+    bottom: 30%;
+}
+
+.h1 {
+  color: #ffff;
+  border-color: black;
+  font-weight: bolder;
+}
+
+.content-coracao {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin: 30px auto;
+  animation: pulsa 1s linear 0s infinite;
+  z-index: 3;
+}
+@keyframes pulsa {
+  0% {
+    transform: scale(0.9) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  70% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  80% {
+    transform: scale(1.2) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.square {
+  transform: rotate(45deg);
+  width: 200px;
+  height: 200px;
+  background: rgb(110, 4, 4);
+  position: absolute;
+  top: 120px;
+}
+.circle:after,
+.circle:before {
+  content: "";
+  position: absolute;
+  width: 216px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgb(110, 4, 4);
+}
+.circle:after {
+  left: 20px;
+  top: 24px;
+}
+.circle:before {
+  right: 20px;
+  top: 24px;
+}
